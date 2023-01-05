@@ -1,0 +1,58 @@
+<section class="video-grid">
+  <div class="video-preview">
+    <table class="mitabla">
+      <thead class="">
+        <tr>
+          <th class="thdetail" rowspan="2">
+            <div>ID</div>
+          </th>
+          <th class="thdetail" colspan="10">
+            <div> FREQUENCIES DETAILS</div>
+          </th>
+        </tr>
+        <tr style="height:30px;">
+          <th>
+            d1
+          </th>
+          <th>
+            d2
+          </th>
+          <th>
+            d3
+          </th>
+          <th>
+            Total
+          </th>
+        </tr>
+      </thead>
+      <tbody style="height:8rem;overflow:scroll;">
+        <tr *ngFor="let data1 of oldFrequency; let i = index">
+          <td>
+            <div class="divtd"> {{i+1}}</div>
+          </td>
+          
+          <td>
+            <div class="divtd">
+              <span class="balls" title="3">{{data1.d1}}</span>
+            </div>
+          </td>
+          <td>
+            <div class="divtd">
+              <span class="balls" title="3">{{data1.d2}}</span>
+            </div>
+          </td>
+          <td>
+            <div class="divtd">
+              <span class="balls" title="3">{{data1.d3}}</span>
+            </div>
+          </td>
+          <td>
+            <div class="divtd">
+              <span class="balls" title="3">{{data1.total}}</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

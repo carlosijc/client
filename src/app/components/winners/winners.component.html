@@ -1,0 +1,216 @@
+  <section class="video-grid">
+    <div class="video-preview">
+      <table>
+        <thead class="">
+        <tr>
+          <th
+            class="thdetail"
+            rowspan="2"
+          >
+            <div>ID</div>
+            <img class="imgplus" src="../../../assets/icons/plus.png" title="Add items" (click)="onAdd()" />
+          </th>
+          <th class="thdetail"  colspan="5">
+            <div >TODAY WINNERS DETAILS</div>
+         
+              <table class="tabledetail">              
+                <tr>
+                  <th >Time</th>
+                  <th >Total Winners</th>
+                  <th >Total Pay Out</th>
+                </tr>
+                <tr *ngFor="let info of readData; let i= index">
+                  <td> 
+                    <img class="centrado" *ngIf="info.schedule_id === 1" src="../../assets/images/sol.png"
+                      alt="Midday Draw"
+                      width="31"
+                      height="30"
+                    />
+                    <img class="centrado" *ngIf="info.schedule_id === 2" src="../../assets/images/luna.png"
+                      alt="Evening Draw"
+                      width="31"
+                      height="30"
+                    />
+               
+                  </td>
+                  <td class="tdtotal">
+                     {{info.totalwinners}}
+                  </td>
+                  <td class="tdtotal">
+                    {{info.totalpayout}}
+                  </td>
+                </tr>
+              </table> 
+          </th>
+        </tr>
+        <tr>
+          <th class="divdate">
+            Date
+          </th>
+          <th >
+           d1
+          </th>
+          <th >
+           d2
+          </th>
+          <th >
+            d3
+          </th>
+          <th >
+            <div>FireBall</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of readData; let i = index" >
+          <td  >
+            <div class="divtd"> {{i+1}}</div> 
+          </td> 
+          <td class="divdate">
+            <div class="divdate">{{data.drawdate}}</div>
+          </td>
+          <td>
+            <div class="divtd"> 
+              <span class="balls" title="3">{{data.d1}}</span>
+            </div>
+          </td>
+          <td >
+            <div class="divtd"> 
+              <span class="balls" title="3">{{data.d2}}</span>
+            </div>
+          </td>
+          <td >
+            <div class="divtd">
+              <span class="balls" title="3">{{data.d3}}</span>
+            </div>
+          </td>
+          <td >
+            <div class="divtd">
+              <span class="fireball" title="3">{{data.fireball}}</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="video-preview">
+    <table id="tabla">
+      <thead class="">
+      <tr>
+        <th
+          class="thdetail"
+          rowspan="2"
+        >
+          <div>ID</div>
+        </th>
+        <th class="thdetail"   colspan="11">
+          <div > OLD WINNERS DETAILS</div>
+        </th>
+      </tr>
+      <tr style="height:30px;">
+        <th >
+          Time
+         </th>
+        <th class="divdate" >
+          Date
+        </th>
+        <th >
+         d1
+        </th>
+        <th >
+         d2
+        </th>
+        <th >
+          d3
+        </th>
+        <th >
+          Trio
+        </th>
+        <th >
+          F23
+        </th>
+        <th >
+          F12
+        </th>
+        <th >
+          F13
+        </th>
+        <th >
+          <div>FireBall</div>
+        </th>
+        <th >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody  *ngFor="let data1 of oldWinners; let i = index">
+      <tr  >
+        <td  class="divtd">
+           {{i+1}}
+        </td> 
+        <td class="divtd" >
+            <img class="centrado" *ngIf="data1.schedule_id === 1" src="../../assets/images/sol.png"
+                      alt="Midday Draw"
+                      width="31"
+                      height="30"
+                    />
+                    <img class="centrado" *ngIf="data1.schedule_id === 2" src="../../assets/images/luna.png"
+                      alt="Evening Draw"
+                      width="31"
+                      height="30"
+                    />
+        </td> 
+
+        <td class="divdate">
+          <div class="divdate">{{data1.drawdate}}</div>
+        </td>
+        <td>
+          <div class="divtd"> 
+            <span class="balls" title="3">{{data1.d1}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd"> 
+            <span class="balls" title="3">{{data1.d2}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="balls" title="3">{{data1.d3}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="balls" title="3">{{data1.trio}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="balls" title="3">{{data1.f23}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="balls" title="3">{{data1.f12}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="balls" title="3">{{data1.f13}}</span>
+          </div>
+        </td>
+        <td >
+          <div class="divtd">
+            <span class="fireball" title="3">{{data1.fireball}}</span>
+          </div>
+        </td>
+        <td rowspan="2" >
+           <input  type="submit"  name="borrar" value="Borrar">
+        </td>
+      
+      </tr>
+
+    </tbody> 
+  </table>
+</div>
+</section>

@@ -1,0 +1,132 @@
+table {
+  /* font-family: arial, sans-serif; */
+  margin-top:10px;
+  width: 100%;
+  font-family: 'Courier New', 'Times New Roman', Times, serif;
+  /* border-radius: 12px; */
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, #fff 68px);
+  box-shadow: 20px 20px 20px 0 rgba(58,17,63,0.493);
+}
+
+.thdetail {
+  width:40px;
+  height: 45px;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.td-action{
+  display: inline-block;
+  white-space: nowrap;
+  width:130px;
+}
+.tdtotal {
+  width: 50%;
+  font-size: 18px;
+  color:black;
+  font-weight:700;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.tabledetail{
+  width: 100%;
+  
+  text-align: center; 
+  vertical-align: middle;
+}
+.divth{
+  width: 50px;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.centrado{
+  margin:10px auto;
+  display:block;
+}
+
+.divtd{
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center; 
+  vertical-align: middle; 
+  width: 50px;
+  height: 50px;
+}
+
+.divdate{
+  margin:10px auto;
+  text-align: center; 
+  vertical-align: middle; 
+  width: 100px;
+}
+
+.imgplus{
+  margin-top: 60px;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.55s;
+}
+.imgplus:hover {
+  /* border: 1px solid #888; */
+  background-color: #ddd;
+}
+th{
+  background-color: var(--clr-primary-7);
+  border-bottom: 1px solid var(--dark-shadow);
+  text-align: center;
+  color: var(--clr-white);
+  font-size: 14px;
+  font-family: var(--ff-primary);
+}
+#tabla {
+   background-color: var(--clr-primary-7);
+   width:100%;
+   height: 380px;
+}
+#tabla tr:hover td{
+  cursor: pointer;
+  background-color:#e79999;
+  }
+  
+td {
+  width: 50px;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  color: var(--clr-dark);
+}
+
+.fix-detail{
+  top: 50%;
+  height: 35px;
+  width:810px;
+  border: 1px solid #dddddd;
+  border-radius: 0%;
+}
+
+.balls {
+  display: inline-block;
+  width: 26px;
+  height: 28px;
+  margin: 1px;
+  line-height: 25px;
+  background: url(../images/ball.png) no-repeat;
+  color: #00675A;
+  font-size: 15px;
+  text-align: center;
+}
+.fireball {
+  display: inline-block;
+  width: 47px;
+  height: 34px;
+  margin: 1px;
+  line-height: 25px;
+  background: url(../images/fireball.png) no-repeat;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: left;
+  padding: 4px 0 0 8px; 
+  vertical-align: center;
+}

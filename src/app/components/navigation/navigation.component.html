@@ -1,0 +1,53 @@
+<nav class="sidebar">
+  <!-- <ul class="sidebar-link">
+    <li>
+      <img src="../../../assets/icons/home.svg" >
+      <div>Home</div>
+     </li>
+     <li>
+       <img src="../../../assets/icons/explore.svg" (click)="goToWinners()" alt="">
+       <div>Winners</div>
+      </li>
+    </ul> -->
+ 
+   <div class="sidebar-link">
+    <i class="fa-light fa fa-home iconos" aria-hidden="true"  type="button" (click)="goToHome()"></i>
+    <!-- <img src="../../../assets/icons/home.svg" (click)="goToHome()"alt=""> -->
+    <div class="iconmenu">Home</div>
+  </div>
+
+  <div class="sidebar-link">
+    <!-- <i class="fa-thin fa-medal"></i> -->
+    <!-- <i class="fa-thin fa-trophy"></i> -->
+    <!-- <i class="fa-thin fa-trophy-star"></i> -->
+    <i class="fa-thin fa fa-trophy iconos" aria-hidden="true" type="button" (click)="goToWinners()"></i>
+    <!-- <img src="../../../assets/icons/explore.svg" (click)="goToWinners()" alt=""> -->
+    <div class="iconmenu">
+      <p>Winners</p>
+    </div>
+  </div>
+  <div class="sidebar-link">
+    <!-- <i class="fa-regular fa-wave-square"></i> -->
+    <i class="fa-regular fa fa-wave-square iconos" aria-hidden="true" type="button" (click)="goToFrequencies()"></i>
+    <!-- <img src="../../../assets/icons/subscriptions.svg" (click)="goToFrequencies()" alt=""> -->
+    <div class="iconmenu">
+      Frequencies
+    </div>
+  </div>
+  <div class="sidebar-link">
+    <img src="../../../assets/icons/originals.svg" alt="">
+    <div class="iconmenu">
+      Originals
+    </div>
+  </div>
+  <div class="sidebar-link">
+    <!-- <i class="fa-thin fa-user"></i> -->
+    <i class="fa-thin fa fa-user iconos" aria-hidden="true" type="button" (click)="goToLogin()"></i>
+    <!-- <img src="../../../assets/icons/user-32.png" (click)="goToLogin()"alt=""> -->
+    <div class="iconmenu">Login</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="../../../assets/icons/library.svg" alt="">
+    <div>Library</div>
+  </div> 
+</nav>
